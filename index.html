@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Form </title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data"> <!-- sned them to the Server-->
+        <div>
+         <label for="name">Name:</label>
+         <input type="text" name="Name" id="name" placeholder="Username">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="name" placeholder="@mail.com" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age" placeholder="Age" min="12" max="120" step="2">
+        </div>
+        <div>
+            <label for="date">Birthdate:</label>
+            <input type="date" name="Date" id="date" min="1940-01-01" max="2060-01-01">
+        </div>
+        <div>
+            Favorite Food:
+            <div>
+                <label for="banana">Banana:</label>
+                <input type="checkbox" name="Banana" id="banana">
+            </div>
+            <div>
+                <label for="banana">Apple:</label>
+                <input type="checkbox" name="Apple" id="apple">
+            </div>
+            <div>
+                <label for="orange">Orange:</label>
+                <input type="checkbox" name="Orange" id="orange">
+            </div>            
+        </div>
+        <div>
+            Gender:
+            <div>
+               <label for="male">Male:</label> 
+               <input type="radio" name="Gender" id="male">
+            </div>
+            <div>
+               <label for="male">Female:</label> 
+               <input type="radio" name="Gender" id="female">
+            </div>
+        </div>
+        <div>
+            <label for="eyeColor">Eye Color:</label>
+            <select name="eyeColor" id="eyeColor"> <!-- We can add two eyeColor by using "multiple" in this line-->
+                <option value="Green">Green</option>
+                <option label="Red"></option>
+                <option label="Blue"></option>
+                <option label="Black"></option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio:</label>
+            <textarea name="bio" id="bio">This is Wail Hassan...</textarea>
+        </div>
+        <input type="hidden" name="hidden" value="Hi">
+
+        <div>
+            Attech Files:<br>
+            <label for="file">File</label>
+            <input id="file" type="file" name="file">
+        </div>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+
+        <div>
+            <label for="url">URL:</label>
+            <input type="usl" name="url" id="url" placeholder="Add Your URL Link..">
+        </div>
+
+        <div>
+            <label for="Color">Color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div>
+         <label>
+        Password:
+        <input type="password" name="Password" placeholder="Password">
+        </label>
+        </div>
+        <button type="reset">Reset</button>
+         <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
